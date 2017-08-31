@@ -12,13 +12,12 @@ script:
 after_success:
   - git config --global user.email "travis@travis-ci.org"
   - git config --global user.name "Travis CI"
-  - rm index.html
   - rm -rf src/
   - rm -rf public/
-  - rm -rf .vscode/
   - rm *
   - mv build/* .
   - rm -rf build/
+  - ls -a -l
   - git add --all
   - git commit -m"auto deploy"
   - git remote add origin-pages https://${coding_token}@git.coding.net/yuizhou/joeydvd.git
