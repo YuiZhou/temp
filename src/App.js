@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: ''
+      data: '明知我命太好，那么多工作做<br/>--容祖儿《与猫共舞》'
     };
     this.show = this.show.bind(this);
   }
@@ -25,7 +25,7 @@ class App extends Component {
     const { data } = this.state;
     return (
       <div className="App">
-        <PageHeader>容祖儿银河护卫队 MY.SECRET.LIVE.DVD团购查询</PageHeader>
+        <PageHeader>容祖儿银河护卫队 MY.SECRET.LIVE DVD团购查询</PageHeader>
         <TelForm onSubmit = {this.show}/>
         <br/>
         {
