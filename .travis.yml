@@ -20,5 +20,6 @@ after_success:
   - ls -a -l
   - git add --all
   - git commit -m"auto deploy"
+  - git log
   - git remote add origin-pages https://${coding_token}@git.coding.net/yuizhou/joeydvd.git
-  - git push -f --quiet --set-upstream origin-pages master
+  - git push -f origin-pages master:master
