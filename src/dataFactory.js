@@ -3,7 +3,7 @@ const raw = require('./data.json');
 function find(tel) {
   for(var i = 0; i < raw.length; i++) {
     var item = raw[i];
-    if (item['电话1'] === tel || item['电话2'] === tel) {
+    if (tel && (item['电话1'] === tel || item['电话2'] === tel)) {
       return item;
     }
   }
