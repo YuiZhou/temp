@@ -8,7 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: '明知我命太好，那么多工作做<br/>--容祖儿《与猫共舞》'
+      data: ''
     };
     this.show = this.show.bind(this);
   }
@@ -30,6 +30,8 @@ class App extends Component {
         <br/>
         {
           (data['电话1'] || data['电话2']) ? 
+          <div>
+           <p><em>所有快递都由申通快递发出</em></p>
             <Table>
               <tbody>
                 <tr>
@@ -46,8 +48,14 @@ class App extends Component {
                 </tr>
               </tbody>
             </Table>
+            </div>
           : <p>{data}</p>
-        } 
+        }
+        <br/>
+        <br/>
+        <br/>
+        <hr/>
+        <p>明知我命太好，那么多工作做<br/><sub>--容祖儿《与猫共舞》</sub></p>
       </div>
     );
   }
