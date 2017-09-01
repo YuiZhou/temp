@@ -18,7 +18,7 @@ class TelForm extends Component {
     return (
       <div>
           <FormControl type='text' placeholder='你的手机号码' ref='tel'/>
-          <Button onClick={this.formHandler} bsStyle="primary" className='submit'>提交</Button>
+          <Button onClick={this.formHandler} bsStyle="info" className='submit'>提交</Button>
       </div>
     );
   }
