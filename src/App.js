@@ -55,7 +55,7 @@ class App extends Component {
         <br/>
         <br/>
         <hr/>
-        <p>明知我命太好，那么多工作做<br/><sub>--容祖儿《与猫共舞》</sub></p>
+        <p>巴不得我四季放暑假<br/><sub>--容祖儿《全身暑假》</sub></p>
       </div>
     );
   }
