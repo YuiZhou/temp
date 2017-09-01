@@ -9,7 +9,7 @@ class App extends Component {
     super(props);
     var tel = this.getTel();
     this.state = {
-      data: dataFactory.find(tel)
+      data: tel ? dataFactory.find(tel) : ''
     };
     this.show = this.show.bind(this);
     this.track = this.track.bind(this);
