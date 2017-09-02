@@ -71,7 +71,7 @@ class App extends Component {
         <br />
         <br />
         <hr />
-        <p>巴不得我四季放暑假<br /><sub>--容祖儿《全身暑假》</sub></p>
+        <p>揣摩不到的分数，等你的拥抱<br /><sub>--容祖儿《如果睡袍太少布》</sub></p>
       </div>
     );
   }
