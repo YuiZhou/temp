@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - 6
+branches:
+  only:
+    - master
+install:
+  - npm install -g npm
+  - npm install
+script:
+  - npm run build
+after_success:
+  - git config --global user.email "travis@travis-ci.org"
+  - git config --global user.name "Travis CI"
+  - git checkout master
+  - rm -rf src/
+  - rm -rf public/
+  - rm *
+  - mv build/* .
+  - rm -rf build/
+  - ls -a -l
+  - git add --all
+  - git commit -m"auto deploy"
+  - git log
+  - git remote add origin-pages https://${coding_token}@git.coding.net/yuizhou/joeydvd.git
+  - git push -f origin-pages master:master
